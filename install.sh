@@ -25,11 +25,6 @@ echo "Installing source code..."
 
 sudo mkdir -p "${APP_ROOT}" || exit 1
 
-# sudo python3 -m venv "${APP_ROOT}" || exit 1
-
-# source "${APP_ROOT}/bin/activate"
-# pip3 install dbus-python
-
 sudo cp ./bt-audio.py "${APP_ROOT}/" || exit 1
 
 sudo touch "${APP_ROOT}/run.sh" || exit 1
