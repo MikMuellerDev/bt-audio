@@ -13,7 +13,7 @@ echo "Installing required packages ($PACKAGES)..."
 sudo apt install -y --fix-missing \
     bluez bluez-tools \
     pulseaudio-module-bluetooth \
-    gstreamer1.0-alsa dbus \
+    gstreamer1.0-alsa python3-dbus dbus \
     python3 || exit 1
 sudo systemctl enable bluetooth --now || exit 1
 
